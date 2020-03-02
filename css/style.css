@@ -1,0 +1,27 @@
+.header{
+    background-color: #003580;
+}
+
+.header .navbar .nav-item .nav-link{
+    color: white;
+    opacity: 0.8;
+}
+
+.header .navbar .nav-item .nav-link:hover{
+    opacity: 1;
+}
+
+.inptGroup{
+    border: 3px solid #febb02;
+}
+
+@media screen and (max-width:450px){
+    .btn-light{
+        width: 49%;
+        margin-top: 0.5rem;
+    }
+    .btn-outline-primary{
+        display: block;
+        margin-top: 0.5rem;
+    }
+}
