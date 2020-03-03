@@ -1,48 +1,114 @@
-.header{
-    background-color: #003580;
+body {
+    font-family: 'Cairo', sans-serif;
+    color: #555555;
 }
 
-.header .navbar .nav-item .nav-link{
+.header {
+  background-color: #003580;
+}
+
+.header .navbar .nav-item .nav-link {
+  color: white;
+  opacity: 0.8;
+}
+.btn-light{
+    font-size: 14.5px;
+}
+.header .navbar .nav-item .nav-link:hover {
+  opacity: 1;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: #0077cc;
     color: white;
-    opacity: 0.8;
 }
-
-.header .navbar .nav-item .nav-link:hover{
-    opacity: 1;
-}
-
-.inptGroup{
-    border: 3px solid #febb02;
-}
-
-.newArrival {
-    transition-timing-function: ease;
-    transition: all 0.2s;
-    height: 220px;
+.imgText {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 300px;
     overflow: hidden;
 }
-.newArrival:hover {
+.imgText:hover{
     opacity: 0.9;
-    cursor: pointer;
 }
-.commit a{
+.top-right {
+    position: absolute;
+    top: 22px;
     text-align: right;
-    padding-bottom: 0.5rem;
-    font-size: 24px;
-    color: black;
+    right: 12px;
 }
-.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after ,
-.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after{
-    display: none;
+.top-left {
+    position: absolute;
+    top: 22px;
+    left: 16px;
+}
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #383838;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.boxSearch .input-group {
+  border: 3px solid #febb02;
 }
 
-@media screen and (max-width:450px){
-    .btn-light{
-        width: 49%;
-        margin-top: 0.5rem;
-    }
-    .btn-outline-primary{
-        display: block;
-        margin-top: 0.5rem;
-    }
+.form-control,
+.btn-primary {
+  height: 48px;
+}
+
+.jmb {
+  background-color: #f7f7f7;
+}
+.jumbContact {
+  background-color: #001b42;
+  color: white;
+}
+.newArrival {
+  transition-timing-function: ease;
+  transition: all 0.2s;
+  height: 220px;
+  width: 220px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.txtCenter {
+  text-align: right;
+}
+
+.newArrival:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.commit a {
+  text-align: right;
+  padding-bottom: 0.5rem;
+  font-size: 22px;
+  color: black;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .btn-light {
+    width: 49%;
+    margin-top: 1rem;
+  }
+  .btn-outline-primary {
+    display: block;
+    margin-top: 1rem;
+  }
+  .txtCenter {
+    text-align: center;
+  }
 }

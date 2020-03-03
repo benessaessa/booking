@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="package/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Booking</title>
 </head>
@@ -18,13 +19,13 @@
     <div class="header p-3">
         <div class="container">
             <div class="row" dir="rtl">
-                <div class="col-lg-4 col-md-4">
+                <div class="col-lg-3 col-md-4">
                     <img src="images/logg.png" class="img-fluid imgLogo">
                 </div>
-                <div class="col-lg-8 col-md-8" dir="rtl">
-                    <a href="#" class="btn btn-outline-primary text-white ">اعرض عقارك علي موقعنا</a>
-                    <button class="btn btn-light">إنشاء حساب</button>
-                    <button class="btn btn-light">تسجيل الدخول</button>
+                <div class="col-lg-9 col-md-8" dir="rtl">
+                    <a href="#" class="btn btn-outline-primary text-white py-1 font-weight-bold">اعرض عقارك علي موقعنا</a>
+                    <button class="btn btn-light font-weight-bold py-1">إنشاء حساب</button>
+                    <button class="btn btn-light font-weight-bold py-1">تسجيل الدخول</button>
                 </div>
             </div>
             <nav class="navbar navbar-expand-lg pr-0 pt-3" dir="rtl">
@@ -61,40 +62,55 @@
     <!-- End of Header -->
 
     <!-- Discover -->
-    <div class="jumbotron text-right py-5">
+    <div class="jumbotron jmb text-right py-5">
         <div class="container">
             <h3> ...استكشف عروض الفنادق والبيوت وغيرها الكثير</h3>
             <p>من البيوت الريفية الدافئة إلى شقق المدينة العصرية</p>
             <div class="boxSearch">
-                <div class="row" dir="rtl">
+                <div class="row pt-4" dir="rtl">
                     <div class="col-lg-10">
-                        <div class="input-group inptGroup">
-                            <div class="input-group-append">
-                                <span class="input-group-text bg-white border-left-0" id="basic-addon2"><i class="fa fa-search"></i></span>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-white border-left-0" id="basic-addon2"><i
+                                                class="fa fa-search"></i></span>
+                                    </div>
+                                    <input type="text" id="sel1" class="form-control border-right-0"
+                                        placeholder=" ما هي وجهتك ؟ ">
+                                </div>
                             </div>
-                            <input type="text" id="sel1" class="form-control border-right-0" placeholder=" ما هي وجهتك ؟ ">
-                            <div class="input-group-append">
-                                <span class="input-group-text bg-white border-left-0" id="basic-addon2"><i class="fa fa-calendar"></i></span>
+                            <div class="col-lg-4">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-white border-left-0" id="basic-addon2"><i
+                                                class="fa fa-calendar"></i></span>
+                                    </div>
+                                    <input type="date" class="form-control border-right-0">
+                                </div>
                             </div>
-                            <input type="date" class="form-control border-right-0">
-                            <div class="input-group-append">
-                                <span class="input-group-text bg-white border-left-0" id="basic-addon2"><i class="fa fa-user"></i></span>
+                            <div class="col-lg-4">
+                                <div class="input-group mb-3">
+                                    <select id="sel3" class="form-control border-right-0">
+                                        <option value="" selected="" disabled=""> السعر </option>
+                                        <option value=""> 10000 - 500000 </option>
+                                        <option value=""> 500000 - 100000 </option>
+                                    </select>
+                                </div>
                             </div>
-                            <select id="sel3" class="form-control border-right-0">
-                                <option value="" selected="" disabled=""> السعر </option>
-                                <option value=""> 10000 - 500000 </option>
-                                <option value=""> 500000 - 100000 </option>
-                            </select>
                         </div>
                     </div>
                     <div class="col-lg-2">
-                        <button class="btn btn-primary text-white py-2" id="sel4"> بحث </button>
+                        <button class="btn btn-primary btn-block text-white py-2" id="sel4"> بحث </button>
                     </div>
                 </div>
-                <div class="custom-control custom-checkbox pt-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                    <label class="custom-control-label" for="customCheck">مسافر في رحلة عمل</label>
-                </div>
+                <form>
+                    <div class="custom-control custom-checkbox pt-3" dir="rtl">
+                        <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                        <label class="custom-control-label pr-4" for="customCheck">مسافر في رحلة عمل</label>
+                    </div>
+                </form>
+                
             </div>
         </div>
 
@@ -104,140 +120,234 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="card text-right card-dismissible">
-                    <div class="media" dir="rtl">
-                        <img src="images/1.jpg" class="mr-0 ml-3" height="150px" width="150px">
-                        <div class="media-body p-3">
-                            <h5 class="mt-0"> عروض أهلاً 2020 <button class="close float-left" data-dismiss="card">&times;</button></h5>
-                            <p>عاهدت نفسك أن تسافر أكثر هذه السنة؟ ابدأ الآن مع خصم 20% من 1 يناير لغاية 31 مارس.</p>
+                <div class="card text-right card-dismissible p-3 mt-2">
+                    <div class="row" dir="rtl">
+                        <div class="col-lg-4">
+                            <img src="images/1.jpg" class="mx-auto d-block" width="150px" height="150px">
+                        </div>
+                        <div class="col-lg-8 pt-2">
+                            <h5 class="mt-0"> عروض أهلاً 2020 <button class="close float-left"
+                                    data-dismiss="card">&times;</button></h5>
+                            <p class="pt-2">عاهدت نفسك أن تسافر أكثر هذه السنة؟ ابدأ الآن مع خصم 20% من 1 يناير لغاية 31
+                                مارس.</p>
                             <button class="btn btn-outline-primary pb-2">شاهد العروض</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="card text-right card-dismissible">
-                    <div class="media" dir="rtl">
-                        <img src="images/1.jpg" class="mr-0 ml-3" height="150px" width="150px">
-                        <div class="media-body p-3">
-                            <h5 class="mt-0"> عروض أهلاً 2020 <button class="close float-left" data-dismiss="card">&times;</button></h5>
-                            <p>عاهدت نفسك أن تسافر أكثر هذه السنة؟ ابدأ الآن مع خصم 20% من 1 يناير لغاية 31 مارس.</p>
-                            <button class="btn btn-outline-primary pb-2">شاهد العروض</button>
+                <div class="card text-right card-dismissible p-3 mt-2">
+                    <div class="row" dir="rtl">
+                        <div class="col-lg-4">
+                            <img src="images/1.jpg" class="mx-auto d-block" width="150px" height="150px">
+                        </div>
+                        <div class="col-lg-8 pt-2">
+                            <h5 class="mt-0"> عروض أهلاً 2020 <button class="close float-left"
+                                    data-dismiss="card">&times;</button></h5>
+                            <p class="pt-2">عاهدت نفسك أن تسافر أكثر هذه السنة؟ ابدأ الآن مع خصم 20% من 1 يناير لغاية 31
+                                مارس.</p>
+                            <button class="btn btn-outline-primary pb-2">إطلع علي العروض</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+
+    </div>
+
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12" dir="rtl">
+                <div class="imgText pt-3">
+                    <a href="#" class="text-white">
+                        <img src="images/1.jpg" class="img-fluid">
+                        <div class="top-right">
+                            <h3>جدة</h3>
+                            <h4>820 عقار</h4>
+                        </div>
+                        <div class="top-left">
+                            <button class="btn"><i class="fa fa-times"></i></button>
+                        </div>
+                        <div class="text-block">
+                            <h6 class="pt-2">متوسط السعر</h6>
+                            <p>1,779 EGP</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12" dir="rtl">
+                <div class="imgText pt-3">
+                    <a href="#" class="text-white">
+                        <img src="images/2.jpg" class="img-fluid">
+                        <div class="top-right">
+                            <h3>الخبر</h3>
+                            <h4>890 عقار</h4>
+                        </div>
+                        <div class="top-left">
+                            <button class="btn"><i class="fa fa-times"></i></button>
+                        </div>
+                        <div class="text-block">
+                            <h6 class="pt-2">متوسط السعر</h6>
+                            <p>1,979 EGP</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-lg-4 col-md-6 col-sm-12" dir="rtl">
+                <div class="imgText pt-3">
+                    <a href="#" class="text-white">
+                        <img src="images/3.jpg" class="img-fluid">
+                        <div class="top-right">
+                            <h3>جدة</h3>
+                            <h4>820 عقار</h4>
+                        </div>
+                        <div class="top-left">
+                            <button class="btn"><i class="fa fa-times"></i></button>
+                        </div>
+                        <div class="text-block">
+                            <h6 class="pt-2">متوسط السعر</h6>
+                            <p>1,779 EGP</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12" dir="rtl">
+                <div class="imgText pt-3">
+                    <a href="#" class="text-white">
+                        <img src="images/4.jpg" class="img-fluid">
+                        <div class="top-right">
+                            <h3>الخبر</h3>
+                            <h4>890 عقار</h4>
+                        </div>
+                        <div class="top-left">
+                            <button class="btn"><i class="fa fa-times"></i></button>
+                        </div>
+                        <div class="text-block">
+                            <h6 class="pt-2">متوسط السعر</h6>
+                            <p>1,979 EGP</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12" dir="rtl">
+                <div class="imgText pt-3">
+                    <a href="#" class="text-white">
+                        <img src="images/5.jpg" class="img-fluid">
+                        <div class="top-right">
+                            <h3>الخبر</h3>
+                            <h4>890 عقار</h4>
+                        </div>
+                        <div class="top-left">
+                            <button class="btn"><i class="fa fa-times"></i></button>
+                        </div>
+                        <div class="text-block">
+                            <h6 class="pt-2">متوسط السعر</h6>
+                            <p>1,979 EGP</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Swiper -->
-    <div class="swiper-container container pb-2"><br>
-        <h3 class="text-right p-3">ابحث حسب نوع مكان الإقامة</h3>
+    <div class="swiper-container container"><br>
+        <h3 class="text-right pt-3 pr-3">ابحث حسب نوع مكان الإقامة</h3>
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="row py-3 justify-content-around">
                     <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
+                        <a href="#">
                             <div class="text-right newArrival">
-                                
-                                    <img src="images/1.jpg" class="mx-auto img-fluid d-block" >
+                                <img src="images/1.jpg" class="mx-auto img-fluid d-block">
                             </div>
                         </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">الشقق</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary">819,789 شقة</a></p>
+                        <p class="commit txtCenter mb-0 text-dark"><a href="#">الشقق</a></p>
+                        <p class="txtCenter"><a href="#" class="text-danger text-center salary">819,789 شقة</a></p>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="row py-3 justify-content-around">
                     <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
+                        <a href="#">
                             <div class="text-right newArrival">
-                                
-                                    <img src="images/2.jpg" class="mx-auto img-fluid d-block" >
+                                <img src="images/2.jpg" class="mx-auto img-fluid d-block">
                             </div>
                         </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">فيلات</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary"> 430,934 فيلا </a></p>
+                        <p class="commit txtCenter mb-0 text-dark"><a href="#">فيلات</a></p>
+                        <p class="txtCenter"><a href="#" class="text-danger text-center salary"> 430,934 فيلا </a></p>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="row py-3 justify-content-around">
                     <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
+                        <a href="#">
                             <div class="text-right newArrival">
-                                
-                                    <img src="images/3.jpg" class="mx-auto img-fluid d-block" >
+                                <img src="images/3.jpg" class="mx-auto img-fluid d-block">
                             </div>
                         </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">الشاليهات</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary">14,235 شاليه</a></p>
+                        <p class="commit txtCenter mb-0 text-dark"><a href="#">الشاليهات</a></p>
+                        <p class="txtCenter"><a href="#" class="text-danger text-center salary">14,235 شاليه</a></p>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="row py-3 justify-content-around">
                     <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
+                        <a href="#">
                             <div class="text-right newArrival">
-                                
-                                    <img src="images/4.jpg" class="mx-auto img-fluid d-block" >
+                                <img src="images/4.jpg" class="mx-auto img-fluid d-block">
                             </div>
                         </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">أكواخ</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary">126,630 كوخ</a></p>
+                        <p class="commit txtCenter mb-0 text-dark"><a href="#">أكواخ</a></p>
+                        <p class="txtCenter"><a href="#" class="text-danger text-center salary">126,630 كوخ</a></p>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="row py-3 justify-content-around">
                     <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
+                        <a href="#">
                             <div class="text-right newArrival">
-                                
-                                    <img src="images/5.jpg" class="mx-auto img-fluid d-block" >
+                                <img src="images/5.jpg" class="mx-auto img-fluid d-block">
                             </div>
                         </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">الشقق</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary">819,789 شقة</a></p>
+                        <p class="commit txtCenter mb-0 text-dark"><a href="#">الشقق</a></p>
+                        <p class="txtCenter"><a href="#" class="text-danger text-center salary">819,789 شقة</a></p>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="row py-3 justify-content-around">
                     <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
+                        <a href="#">
                             <div class="text-right newArrival">
-                                
-                                    <img src="images/1.jpg" class="mx-auto img-fluid d-block" >
+                                <img src="images/1.jpg" class="mx-auto img-fluid d-block">
                             </div>
                         </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">الشقق</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary">819,789 شقة</a></p>
+                        <p class="commit txtCenter mb-0 text-dark"><a href="#">الشقق</a></p>
+                        <p class="txtCenter"><a href="#" class="text-danger text-center salary">819,789 شقة</a></p>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="row py-3 justify-content-around">
                     <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
+                        <a href="#">
                             <div class="text-right newArrival">
-                                
-                                    <img src="images/1.jpg" class="mx-auto img-fluid d-block" >
+                                <img src="images/1.jpg" class="mx-auto img-fluid d-block">
                             </div>
                         </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">الشقق</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary">819,789 شقة</a></p>
+                        <p class="txtCenter commit mb-0 text-dark"><a href="#">الشقق</a></p>
+                        <p class="txtCenter"><a href="#" class="text-danger text-center salary">819,789 شقة</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Add Pagination -->
-        <!-- <div class="swiper-pagination">
-            <img src="images/next.svg">
-        </div> -->
         <div class="swiper-button-next">
             <img src="images/right.svg">
         </div>
@@ -245,112 +355,100 @@
             <img src="images/left.svg">
         </div>
     </div><br>
-    <div class="swiper-container container pb-5"><br>
-        <h3 class="text-right p-3">بيوت يحبها الضيوف </h3>
+    <div class="swiper-container container">
+        <h3 class="text-right pr-3">بيوت يحبها الضيوف </h3>
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="row py-3 justify-content-around">
-                    <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
+                    <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3" dir="rtl">
+                        <a href="#">
                             <div class="text-right newArrival">
-                                
-                                    <img src="images/1.jpg" class="mx-auto img-fluid d-block" >
+                                <img src="images/1.jpg" class="mx-auto img-fluid d-block">
                             </div>
                         </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">الشقق</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary">819,789 شقة</a></p>
+                        <p class="txtCenter mb-0 text-dark pt-2"><a href="#"> شقق شوغار لوقت</a></p>
+                        <p class="txtCenter mb-1">ريو دي جانيرو</p>
+                        <p class="txtCenter font-weight-bold mb-1">ابتداءا من 661 <span>EGP</span></p>
+                        <p class="txtCenter"><span class="badge py-2 px-2 badge-primary">8.1</span> ممتاز 304 تقييم</p>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="row py-3 justify-content-around">
-                    <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
+                    <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3" dir="rtl">
+                        <a href="#">
                             <div class="text-right newArrival">
-                                
-                                    <img src="images/2.jpg" class="mx-auto img-fluid d-block" >
+                                <img src="images/2.jpg" class="mx-auto img-fluid d-block">
                             </div>
                         </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">فيلات</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary"> 430,934 فيلا </a></p>
+                        <p class="txtCenter mb-0 text-dark pt-2"><a href="#"> شقق شوغار لوقت</a></p>
+                        <p class="txtCenter mb-1">ريو دي جانيرو</p>
+                        <p class="txtCenter font-weight-bold mb-1">ابتداءا من 661 <span>EGP</span></p>
+                        <p class="txtCenter"><span class="badge py-2 px-2 badge-primary">8.1</span> ممتاز 304 تقييم</p>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="row py-3 justify-content-around">
-                    <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
+                    <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3" dir="rtl">
+                        <a href="#">
                             <div class="text-right newArrival">
-                                
-                                    <img src="images/3.jpg" class="mx-auto img-fluid d-block" >
+                                <img src="images/3.jpg" class="mx-auto img-fluid d-block">
                             </div>
                         </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">الشاليهات</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary">14,235 شاليه</a></p>
+                        <p class="txtCenter mb-0 text-dark pt-2"><a href="#"> شقق شوغار لوقت</a></p>
+                        <p class="txtCenter mb-1">ريو دي جانيرو</p>
+                        <p class="txtCenter font-weight-bold mb-1">ابتداءا من 661 <span>EGP</span></p>
+                        <p class="txtCenter"><span class="badge py-2 px-2 badge-primary">8.1</span> ممتاز 304 تقييم</p>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="row py-3 justify-content-around">
-                    <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
+                    <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3" dir="rtl">
+                        <a href="#">
                             <div class="text-right newArrival">
-                                
-                                    <img src="images/4.jpg" class="mx-auto img-fluid d-block" >
+                                <img src="images/4.jpg" class="mx-auto img-fluid d-block">
                             </div>
                         </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">أكواخ</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary">126,630 كوخ</a></p>
+                        <p class="txtCenter mb-0 text-dark pt-2"><a href="#"> شقق شوغار لوقت</a></p>
+                        <p class="txtCenter mb-1">ريو دي جانيرو</p>
+                        <p class="txtCenter font-weight-bold mb-1">ابتداءا من 661 <span>EGP</span></p>
+                        <p class="txtCenter"><span class="badge py-2 px-2 badge-primary">8.1</span> ممتاز 304 تقييم</p>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="row py-3 justify-content-around">
-                    <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
+                    <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3" dir="rtl">
+                        <a href="#">
                             <div class="text-right newArrival">
-                                
-                                    <img src="images/5.jpg" class="mx-auto img-fluid d-block" >
+                                <img src="images/1.jpg" class="mx-auto img-fluid d-block">
                             </div>
                         </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">الشقق</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary">819,789 شقة</a></p>
+                        <p class="txtCenter mb-0 text-dark pt-2"><a href="#"> شقق شوغار لوقت</a></p>
+                        <p class="txtCenter mb-1">ريو دي جانيرو</p>
+                        <p class="txtCenter font-weight-bold mb-1">ابتداءا من 661 <span>EGP</span></p>
+                        <p class="txtCenter"><span class="badge py-2 px-2 badge-primary">8.1</span> ممتاز 304 تقييم</p>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="row py-3 justify-content-around">
-                    <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
+                    <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3" dir="rtl">
+                        <a href="#">
                             <div class="text-right newArrival">
-                                
-                                    <img src="images/1.jpg" class="mx-auto img-fluid d-block" >
+                                <img src="images/1.jpg" class="mx-auto img-fluid d-block">
                             </div>
                         </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">الشقق</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary">819,789 شقة</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="row py-3 justify-content-around">
-                    <div class="col-lg-9 col-md-6 col-sm-12 col-12 pt-3">
-                        <a href="#"> 
-                            <div class="text-right newArrival">
-                                
-                                    <img src="images/1.jpg" class="mx-auto img-fluid d-block" >
-                            </div>
-                        </a>
-                        <p class="commit text-right mb-0 text-dark"><a href="#">الشقق</a></p>
-                        <p class="text-right"><a href="#" class="text-danger text-center salary">819,789 شقة</a></p>
+                        <p class="txtCenter mb-0 text-dark pt-2"><a href="#"> شقق شوغار لوقت</a></p>
+                        <p class="txtCenter mb-1">ريو دي جانيرو</p>
+                        <p class="txtCenter font-weight-bold mb-1">ابتداءا من 661 <span>EGP</span></p>
+                        <p class="txtCenter"><span class="badge py-2 px-2 badge-primary">8.1</span> ممتاز 304 تقييم</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Add Pagination -->
-        <!-- <div class="swiper-pagination">
-            <img src="images/next.svg">
-        </div> -->
         <div class="swiper-button-next">
             <img src="images/right.svg">
         </div>
@@ -358,44 +456,266 @@
             <img src="images/left.svg">
         </div>
     </div><br>
+
+    <div class="container text-right">
+        <h2>وجهات نحبها</h2>
+        <ul class="nav nav-tabs pt-3" id="myTab" role="tablist" dir="rtl">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">المناطق</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">مدن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">معالم</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row pb-4" dir="rtl">
+                    <div class="col-6 col-lg-2 text-right"><br>
+                      <a href="#">القاهرة (56,119) </a><br>
+                      <a href="#">السويس (3,074)</a><br>
+                      <a href="#"> الإسماعيلية (1,419) </a><br>
+                      <a href="#"> المنوفية (795)</a> <br>
+                      <a href="#">الفيوم (354)</a><br>
+                      <a href="#">كل الإعلانات...</a>
+                    </div>
+                  
+                  <div class="col-6 col-lg-2 text-right"><br>
+                    <a href="#"> الجيزة (25,778) </a><br>
+                    <a href="#">  القليوبية (2,464) </a><br>
+                    <a href="#"> دمياط (1,334) </a><br>
+                    <a href="#"> البحيرة (495) </a>
+                    <a href="#">أسوان (322)</a>
+                  </div>
+                  <div class="col-12 col-lg-1"></div>
+                  <div class="col-6 col-lg-2 text-right"><br>
+                    <a href="#"> الإسكندرية (17,934) </a><br>
+                    <a href="#"> الغربية (2,179) </a><br>
+                    <a href="#"> بورسعيد (1,173)</a><br>
+                    <a href="#"> المنيا (423) </a><br>
+                    <a href="#">كفر الشيخ (302)</a>
+                  </div>
+                  <div class="col-lg-1 col-1"></div>
+                  <div class="col-5 col-lg-2 text-right"><br>
+                    <a href="#">مطروح (8,274)</a><br>
+                    <a href="#">الشرقية (2,093)</a><br>
+                    <a href="#">أسيوط (1,066)  </a><br>
+                    <a href="#"> بني سويف (423) </a>
+                    <a href="#">قنا (274)</a>
+                  </div>
+                  <div class="col-6 col-lg-2"><br>
+                    <div class="text-right">
+                      <a href="#">الدقهلية (3,276)</a>
+                      <a href="#">البحر الأحمر (1,893)</a>
+                      <a href="#">جنوب سيناء (1,024)</a>
+                      <a href="#">سوهاج (364)</a>
+                      <a href="#"> الأقصر (151) </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="row pb-4" dir="rtl">
+                    <div class="col-6 col-lg-2 text-right"><br>
+                      <a href="#">القاهرة (56,119) </a><br>
+                      <a href="#">السويس (3,074)</a><br>
+                      <a href="#"> الإسماعيلية (1,419) </a><br>
+                      <a href="#"> المنوفية (795)</a> <br>
+                      <a href="#">الفيوم (354)</a><br>
+                      <a href="#">كل الإعلانات...</a>
+                    </div>
+                  
+                  <div class="col-6 col-lg-2 text-right"><br>
+                    <a href="#"> الجيزة (25,778) </a><br>
+                    <a href="#">  القليوبية (2,464) </a><br>
+                    <a href="#"> دمياط (1,334) </a><br>
+                    <a href="#"> البحيرة (495) </a>
+                    <a href="#">أسوان (322)</a>
+                  </div>
+                  <div class="col-12 col-lg-1"></div>
+                  <div class="col-6 col-lg-2 text-right"><br>
+                    <a href="#"> الإسكندرية (17,934) </a><br>
+                    <a href="#"> الغربية (2,179) </a><br>
+                    <a href="#"> بورسعيد (1,173)</a><br>
+                    <a href="#"> المنيا (423) </a><br>
+                    <a href="#">كفر الشيخ (302)</a>
+                  </div>
+                  <div class="col-lg-1 col-1"></div>
+                  <div class="col-5 col-lg-2 text-right"><br>
+                    <a href="#">مطروح (8,274)</a><br>
+                    <a href="#">الشرقية (2,093)</a><br>
+                    <a href="#">أسيوط (1,066)  </a><br>
+                    <a href="#"> بني سويف (423) </a>
+                    <a href="#">قنا (274)</a>
+                  </div>
+                  <div class="col-6 col-lg-2"><br>
+                    <div class="text-right">
+                      <a href="#">الدقهلية (3,276)</a>
+                      <a href="#">البحر الأحمر (1,893)</a>
+                      <a href="#">جنوب سيناء (1,024)</a>
+                      <a href="#">سوهاج (364)</a>
+                      <a href="#"> الأقصر (151) </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="row pb-4" dir="rtl">
+                    <div class="col-6 col-lg-2 text-right"><br>
+                      <a href="#">القاهرة (56,119) </a><br>
+                      <a href="#">السويس (3,074)</a><br>
+                      <a href="#"> الإسماعيلية (1,419) </a><br>
+                      <a href="#"> المنوفية (795)</a> <br>
+                      <a href="#">الفيوم (354)</a><br>
+                      <a href="#">كل الإعلانات...</a>
+                    </div>
+                  
+                  <div class="col-6 col-lg-2 text-right"><br>
+                    <a href="#"> الجيزة (25,778) </a><br>
+                    <a href="#">  القليوبية (2,464) </a><br>
+                    <a href="#"> دمياط (1,334) </a><br>
+                    <a href="#"> البحيرة (495) </a>
+                    <a href="#">أسوان (322)</a>
+                  </div>
+                  <div class="col-12 col-lg-1"></div>
+                  <div class="col-6 col-lg-2 text-right"><br>
+                    <a href="#"> الإسكندرية (17,934) </a><br>
+                    <a href="#"> الغربية (2,179) </a><br>
+                    <a href="#"> بورسعيد (1,173)</a><br>
+                    <a href="#"> المنيا (423) </a><br>
+                    <a href="#">كفر الشيخ (302)</a>
+                  </div>
+                  <div class="col-lg-1 col-1"></div>
+                  <div class="col-5 col-lg-2 text-right"><br>
+                    <a href="#">مطروح (8,274)</a><br>
+                    <a href="#">الشرقية (2,093)</a><br>
+                    <a href="#">أسيوط (1,066)  </a><br>
+                    <a href="#"> بني سويف (423) </a>
+                    <a href="#">قنا (274)</a>
+                  </div>
+                  <div class="col-6 col-lg-2"><br>
+                    <div class="text-right">
+                      <a href="#">الدقهلية (3,276)</a>
+                      <a href="#">البحر الأحمر (1,893)</a>
+                      <a href="#">جنوب سيناء (1,024)</a>
+                      <a href="#">سوهاج (364)</a>
+                      <a href="#"> الأقصر (151) </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="jumbotron jumbContact">
+        <div class="container text-center" dir="rtl">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h3>وفر وقتك ومالك! </h3>
+                    <p>اشترك وسنرسل أفضل العروض إليك</p>
+                    <form class="pt-4">
+                        <div class="input-group newsletter pb-5">
+                            <input type="email" class="form-control inptEmail" required
+                                placeholder="عنوان البريد الخاص بك">
+                            <span class="input-group-btn pr-3"><button class="btn text-white btn-primary" type="submit">
+                                    اشترك </button></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="foot">
+      
+        <div class="container text-right pb-5">
+            <a href="#"> مصر </a>
+            <div class="row" dir="rtl">
+                <div class="col-6 col-lg-2 text-right"><br>
+                  <a href="#">القاهرة (56,119) </a><br>
+                  <a href="#">السويس (3,074)</a><br>
+                  <a href="#"> الإسماعيلية (1,419) </a><br>
+                  <a href="#"> المنوفية (795)</a> <br>
+                  <a href="#">الفيوم (354)</a><br>
+                  <a href="#">كل الإعلانات...</a>
+                </div>
+              
+              <div class="col-6 col-lg-2 text-right"><br>
+                <a href="#"> الجيزة (25,778) </a><br>
+                <a href="#">  القليوبية (2,464) </a><br>
+                <a href="#"> دمياط (1,334) </a><br>
+                <a href="#"> البحيرة (495) </a>
+                <a href="#">أسوان (322)</a>
+              </div>
+              <div class="col-12 col-lg-1"></div>
+              <div class="col-6 col-lg-2 text-right"><br>
+                <a href="#"> الإسكندرية (17,934) </a><br>
+                <a href="#"> الغربية (2,179) </a><br>
+                <a href="#"> بورسعيد (1,173)</a><br>
+                <a href="#"> المنيا (423) </a><br>
+                <a href="#">كفر الشيخ (302)</a>
+              </div>
+              <div class="col-lg-1 col-1"></div>
+              <div class="col-5 col-lg-2 text-right"><br>
+                <a href="#">مطروح (8,274)</a><br>
+                <a href="#">الشرقية (2,093)</a><br>
+                <a href="#">أسيوط (1,066)  </a><br>
+                <a href="#"> بني سويف (423) </a>
+                <a href="#">قنا (274)</a>
+              </div>
+              <div class="col-6 col-lg-2"><br>
+                <div class="text-right">
+                  <a href="#">الدقهلية (3,276)</a>
+                  <a href="#">البحر الأحمر (1,893)</a>
+                  <a href="#">جنوب سيناء (1,024)</a>
+                  <a href="#">سوهاج (364)</a>
+                  <a href="#"> الأقصر (151) </a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="package/js/swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 5,
-    // spaceBetween: 15,
-    freeMode: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-        },
-    breakpoints: {
-        // when window width is <= 499px
-        320: {
-            slidesPerView: 1,
-            spaceBetweenSlides: 20
-        },
-        700:{
-            slidesPerView: 2,
-            spaceBetweenSlides: 50
-        },
-        // when window width is <= 999px
-        999: {
-            slidesPerView: 4,
-            spaceBetweenSlides: 15
-        },
-        1200:{
             slidesPerView: 5,
-            spaceBetweenSlides: 15
-        }
-    }
-    });
+            // spaceBetween: 15,
+            freeMode: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                // when window width is <= 499px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetweenSlides: 20
+                },
+                700: {
+                    slidesPerView: 2,
+                    spaceBetweenSlides: 50
+                },
+                // when window width is <= 999px
+                999: {
+                    slidesPerView: 4,
+                    spaceBetweenSlides: 15
+                },
+                1450: {
+                    slidesPerView: 5,
+                    spaceBetweenSlides: 15
+                }
+            }
+        });
     </script>
 </body>
 
