@@ -15,6 +15,27 @@
     border: 3px solid #febb02;
 }
 
+.newArrival {
+    transition-timing-function: ease;
+    transition: all 0.2s;
+    height: 220px;
+    overflow: hidden;
+}
+.newArrival:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.commit a{
+    text-align: right;
+    padding-bottom: 0.5rem;
+    font-size: 24px;
+    color: black;
+}
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after ,
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after{
+    display: none;
+}
+
 @media screen and (max-width:450px){
     .btn-light{
         width: 49%;
