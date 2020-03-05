@@ -99,6 +99,16 @@ body {
   display: none;
 }
 
+/* =================================== Product page =============================== */
+.search{
+  background-color: #febb02;
+}
+.custom-control-label::after {
+  right: -.5rem;
+}
+.custom-control-label::before {
+  right: -.5rem;
+}
 @media screen and (max-width: 450px) {
   .btn-light {
     width: 49%;
@@ -111,4 +121,9 @@ body {
   .txtCenter {
     text-align: center;
   }
+  .offerA{
+    display: none;
+  }
 }
+
+

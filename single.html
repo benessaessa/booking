@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Product</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header p-3">
+        <div class="container">
+            <div class="row" dir="rtl">
+                <div class="col-lg-3 col-md-4">
+                    <img src="images/logg.png" class="img-fluid imgLogo">
+                </div>
+                <div class="col-lg-9 col-md-8" dir="rtl">
+                    <a href="#" class="btn btn-outline-primary text-white py-1 font-weight-bold">اعرض عقارك علي موقعنا</a>
+                    <button class="btn btn-light font-weight-bold py-1">إنشاء حساب</button>
+                    <button class="btn btn-light font-weight-bold py-1">تسجيل الدخول</button>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg pr-0 pt-3" dir="rtl">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" 
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-align-justify text-white"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-right pr-0" dir="rtl">
+                        <li class="nav-item active pl-3">
+                            <a class="nav-link" href="#"><i class="fa fa-home"></i> الإقامات <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a class="nav-link" href="#"><i class="fa fa-plane"></i> رحلات الطيران</a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a class="nav-link" href="#"><i class="fa fa-car"></i> تأجير السيارات </a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a class="nav-link" href="#"><i class="fa fa-asterisk"></i> المعالم السياحية </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-taxi"></i> سيارات أجرة المطار </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of Header -->
+
+    <div class="container">
+        <!-- list of countries -->
+        <ul class="nav justify-content-start pr-0 pb-3" dir="rtl">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">  الرئيسية <i class="fa fa-angle-right pr-3"></i></a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">  مصر  <i class="fa fa-angle-right pr-3"></i></a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">محافظة البحر اللأحمر  <i class="fa fa-angle-right pr-3"></i></a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الغردقة</a>
+            </li>
+        </ul>
+        <div class="row text-right" dir="rtl">
+            <div class="col-lg-4 col-md-5 col-sm-12">
+                <div class="jumbotron text-right py-3 search">
+                    <h3>بحث</h3>
+                    <form action="#" class="text-right">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">الوجهة / اسم مكان الإقامة : </label>
+                            <input type="text" class="form-control"  placeholder="مكان الإقامة">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"> تاريخ الوصول </label>
+                            <input type="date" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"> تاريخ المغادرة </label>
+                            <input type="date" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="ekama">إقامة لمدة 1 ليلة</label>
+                            <select class="form-control" id="ekama">
+                              <option> شخص بالغ واحد </option>
+                              <option>شخصان بالغان</option>
+                              <option> 3 أشخاص بالغين</option>
+                              <option> 4 أشخاص بالغين</option>
+                              <option> 5 أشخاص بالغين</option>
+                            </select>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <select class="form-control" id="ekama">
+                                    <option> بدون أطفال </option>
+                                    <option> طفل واحد </option>
+                                    <option>طفلان</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select class="form-control" id="ekama">
+                                    <option> غرفة واحدة</option>
+                                    <option> غرفتان </option>
+                                    <option> 3 غرف</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block">بحث</button>
+                    </form>
+                </div>
+                <div class="jumbotron text-right py-3 bg-white border">
+                    <h3 class="text-dark border-bottom pb-3">التصفية حسب:</h3>
+                    <div>
+                        <h6 class="text-dark font-weight-bold py-2">تصنيف عدد النجوم</h6>
+                        <div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="star1">
+                                <label class="custom-control-label pr-3" for="star1"> نجمة واحدة </label>
+                                <span class="float-left">1</span>
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="star2">
+                                <label class="custom-control-label pr-3" for="star2"> نجمتان </label>
+                                <span class="float-left">4</span>
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="star3">
+                                <label class="custom-control-label pr-3" for="star3"> 3 نجوم </label>
+                                <span class="float-left">425</span>
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="star4">
+                                <label class="custom-control-label pr-3" for="star4"> 4 نجوم  </label>
+                                <span class="float-left">425</span>
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="star5">
+                                <label class="custom-control-label pr-3" for="star5"> 5 نجوم  </label>
+                                <span class="float-left">425</span>
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="unStar">
+                                <label class="custom-control-label pr-3" for="unStar"> غير مصنف  </label>
+                                <span class="float-left">425</span>
+                            </div>
+                        </div><hr>
+                        <div>
+                            <h6 class="text-dark font-weight-bold py-2">موصي به لك</h6>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="diafa">
+                                <label class="custom-control-label pr-3" for="diafa"> بيوت ضيافة </label>
+                                <span class="float-left">1</span>
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="shafk">
+                                <label class="custom-control-label pr-3" for="shafk"> الشفق </label>
+                                <span class="float-left">4</span>
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="brek">
+                                <label class="custom-control-label pr-3" for="brek"> مبيت وإفطار </label>
+                                <span class="float-left">425</span>
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="holid">
+                                <label class="custom-control-label pr-3" for="holid"> بيوت العطلات </label>
+                                <span class="float-left">425</span>
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="boot">
+                                <label class="custom-control-label pr-3" for="boot"> قوارب  </label>
+                                <span class="float-left">425</span>
+                            </div>
+                        </div><hr>
+                        <div>
+                            <h6 class="text-dark font-weight-bold py-2"> أفكار لأوقات من المرح  </h6>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="beach">
+                                <label class="custom-control-label pr-3" for="beach"> شاطئ </label>
+                                <span class="float-left">1</span>
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="diving">
+                                <label class="custom-control-label pr-3" for="diving"> غوص </label>
+                                <span class="float-left">4</span>
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="special">
+                                <label class="custom-control-label pr-3" for="special"> منطقة شاطئ خاص </label>
+                                <span class="float-left">425</span>
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="ride">
+                                <label class="custom-control-label pr-3" for="ride"> ركوب الأمواج </label>
+                                <span class="float-left">425</span>
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="ddiv">
+                                <label class="custom-control-label pr-3" for="ddiv"> الغطس </label>
+                                <span class="float-left">425</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-12">
+                <h2 class="text-dark">الغردقة: وجدنا 625 مكان إقامة</h2>
+                <p>3 أسباب تدعوك للزيارة: الاسترخاء والشواطئ والغطس</p>
+                <div class="card pb-2">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <a href="#"><img src="images/1.jpg" height="210px" class="card-img" alt="..."></a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <a href="#" style="font-size: 20px"> No Commission Prime location </a>
+                            <small class="float-left text-success font-weight-bold">متميز</small><br>
+                            <button class="btn btn-primary float-left mb-3"> اعرض الأسعار </button>
+                            <p class="card-text"><i class="fa fa-map-marker-alt"></i> ماونت فيو , رأس الحكمة , الساحل الشمالي</p>
+                            <p class="font-weight-bolder text-danger">1,650,000 جنيه</p>
+                            <p>  فيلا &nbsp;  3  <i class="fa fa-bed"></i>  &nbsp; 2 <i class="fa fa-bath"></i>
+                                &nbsp;&nbsp; 126 متر مربع </p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="card mt-2">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <a href="#"><img src="images/2.jpg" height="210px" class="card-img" alt="..."></a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <a href="#" style="font-size: 20px"> No Commission Prime location </a>
+                            <small class="float-left text-success font-weight-bold">متميز</small><br>
+                            <button class="btn btn-primary float-left mb-3"> اعرض الأسعار </button>
+                            <p class="card-text"><i class="fa fa-map-marker-alt"></i> ماونت فيو , رأس الحكمة , الساحل الشمالي</p>
+                            <p class="font-weight-bolder text-danger">1,650,000 جنيه</p>
+                            <p>  فيلا &nbsp;  3  <i class="fa fa-bed"></i>  &nbsp; 2 <i class="fa fa-bath"></i>
+                                &nbsp;&nbsp; 126 متر مربع </p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="card mt-2">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <a href="#"><img src="images/3.jpg" height="210px" class="card-img" alt="..."></a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <a href="#" style="font-size: 20px"> No Commission Prime location </a>
+                            <small class="float-left text-success font-weight-bold">متميز</small><br>
+                            <button class="btn btn-primary float-left mb-3"> اعرض الأسعار </button>
+                            <p class="card-text"><i class="fa fa-map-marker-alt"></i> ماونت فيو , رأس الحكمة , الساحل الشمالي</p>
+                            <p class="font-weight-bolder text-danger">1,650,000 جنيه</p>
+                            <p>  فيلا &nbsp;  3  <i class="fa fa-bed"></i>  &nbsp; 2 <i class="fa fa-bath"></i>
+                                &nbsp;&nbsp; 126 متر مربع </p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="card mt-2">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <a href="#"><img src="images/2.jpg" height="210px" class="card-img" alt="..."></a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <a href="#" style="font-size: 20px"> No Commission Prime location </a>
+                            <small class="float-left text-success font-weight-bold">متميز</small><br>
+                            <button class="btn btn-primary float-left mb-3"> اعرض الأسعار </button>
+                            <p class="card-text"><i class="fa fa-map-marker-alt"></i> ماونت فيو , رأس الحكمة , الساحل الشمالي</p>
+                            <p class="font-weight-bolder text-danger">1,650,000 جنيه</p>
+                            <p>  فيلا &nbsp;  3  <i class="fa fa-bed"></i>  &nbsp; 2 <i class="fa fa-bath"></i>
+                                &nbsp;&nbsp; 126 متر مربع </p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="card mt-2">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <a href="#"><img src="images/2.jpg" height="210px" class="card-img" alt="..."></a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <a href="#" style="font-size: 20px"> No Commission Prime location </a>
+                            <small class="float-left text-success font-weight-bold">متميز</small><br>
+                            <button class="btn btn-primary float-left mb-3"> اعرض الأسعار </button>
+                            <p class="card-text"><i class="fa fa-map-marker-alt"></i> ماونت فيو , رأس الحكمة , الساحل الشمالي</p>
+                            <p class="font-weight-bolder text-danger">1,650,000 جنيه</p>
+                            <p>  فيلا &nbsp;  3  <i class="fa fa-bed"></i>  &nbsp; 2 <i class="fa fa-bath"></i>
+                                &nbsp;&nbsp; 126 متر مربع </p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination pr-0 mt-5" dir="rtl">
+                      <li class="page-item"><a class="page-link" href="#"> <i class="fa fa-angle-right"></i> السابق</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item"><a class="page-link" href="#">6</a></li>
+                      <li class="page-item"><a class="page-link" href="#">التالي <i class="fa fa-angle-left"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="jumbotron jumbContact">
+        <div class="container text-center" dir="rtl">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h3>وفر وقتك ومالك! </h3>
+                    <p>اشترك وسنرسل أفضل العروض إليك</p>
+                    <form class="pt-4">
+                        <div class="input-group newsletter pb-5">
+                            <input type="email" class="form-control inptEmail" required
+                                placeholder="عنوان البريد الخاص بك">
+                            <span class="input-group-btn pr-3"><button class="btn text-white btn-primary" type="submit">
+                                    اشترك </button></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="foot">
+      
+        <div class="container text-right pb-5">
+            <a href="#"> مصر </a>
+            <div class="row" dir="rtl">
+                <div class="col-6 col-lg-2 text-right"><br>
+                  <a href="#">القاهرة (56,119) </a><br>
+                  <a href="#">السويس (3,074)</a><br>
+                  <a href="#"> الإسماعيلية (1,419) </a><br>
+                  <a href="#"> المنوفية (795)</a> <br>
+                  <a href="#">الفيوم (354)</a><br>
+                  <a href="#">كل الإعلانات...</a>
+                </div>
+              
+              <div class="col-6 col-lg-2 text-right"><br>
+                <a href="#"> الجيزة (25,778) </a><br>
+                <a href="#">  القليوبية (2,464) </a><br>
+                <a href="#"> دمياط (1,334) </a><br>
+                <a href="#"> البحيرة (495) </a>
+                <a href="#">أسوان (322)</a>
+              </div>
+              <div class="col-12 col-lg-1"></div>
+              <div class="col-6 col-lg-2 text-right"><br>
+                <a href="#"> الإسكندرية (17,934) </a><br>
+                <a href="#"> الغربية (2,179) </a><br>
+                <a href="#"> بورسعيد (1,173)</a><br>
+                <a href="#"> المنيا (423) </a><br>
+                <a href="#">كفر الشيخ (302)</a>
+              </div>
+              <div class="col-lg-1 col-1"></div>
+              <div class="col-5 col-lg-2 text-right"><br>
+                <a href="#">مطروح (8,274)</a><br>
+                <a href="#">الشرقية (2,093)</a><br>
+                <a href="#">أسيوط (1,066)  </a><br>
+                <a href="#"> بني سويف (423) </a>
+                <a href="#">قنا (274)</a>
+              </div>
+              <div class="col-6 col-lg-2"><br>
+                <div class="text-right">
+                  <a href="#">الدقهلية (3,276)</a>
+                  <a href="#">البحر الأحمر (1,893)</a>
+                  <a href="#">جنوب سيناء (1,024)</a>
+                  <a href="#">سوهاج (364)</a>
+                  <a href="#"> الأقصر (151) </a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>
