@@ -222,7 +222,10 @@ body {
 .mtBtn{
   margin-top: 2rem;
 }
-
+/* ============================================== Registration =========== */
+.bgRegister{
+  background-color: #f4f7fc;
+}
 @media screen and (max-width: 450px) {
   .btn-light {
     width: 49%;
