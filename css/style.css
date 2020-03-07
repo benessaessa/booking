@@ -199,7 +199,9 @@ body {
   width: 16.66%;
   height: 5%;
 }
-
+.btnMS{
+  display: none;
+}
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
@@ -234,6 +236,12 @@ body {
   .btn-outline-primary {
     display: block;
     margin-top: 1rem;
+  }
+  .search{
+    display: none;
+  }
+  .btnMS{
+    display: block;
   }
   .txtCenter {
     text-align: center;
