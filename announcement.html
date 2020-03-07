@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.webp">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Announcement</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header p-3">
+        <div class="container">
+            <div class="row" dir="rtl">
+                <div class="col-lg-3 col-md-4">
+                    <a href="#"><img src="images/logg.png" class="img-fluid imgLogo"></a>   
+                </div>
+                <div class="col-lg-9 col-md-8" dir="rtl">
+                    <a href="#" class="btn btn-outline-primary text-white py-1 font-weight-bold">اعرض عقارك علي موقعنا</a>
+                    <button class="btn btn-light font-weight-bold py-1">إنشاء حساب</button>
+                    <button class="btn btn-light font-weight-bold py-1">تسجيل الدخول</button>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg pr-0 pt-3" dir="rtl">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-align-justify text-white"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-right pr-0" dir="rtl">
+                        <li class="nav-item active pl-3">
+                            <a class="nav-link" href="#"><i class="fa fa-home"></i> الإقامات <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a class="nav-link" href="#"><i class="fa fa-plane"></i> رحلات الطيران</a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a class="nav-link" href="#"><i class="fa fa-car"></i> تأجير السيارات </a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a class="nav-link" href="#"><i class="fa fa-asterisk"></i> المعالم السياحية </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-taxi"></i> سيارات أجرة المطار </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of Header -->
+
+    <div class="container">
+        <!-- list of countries -->
+        <ul class="nav justify-content-start pr-0 pb-3" dir="rtl">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">  الرئيسية <i class="fa fa-angle-right pr-3"></i></a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">  مصر  <i class="fa fa-angle-right pr-3"></i></a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">محافظة البحر اللأحمر  <i class="fa fa-angle-right pr-3"></i></a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الغردقة</a>
+            </li>
+        </ul>
+        <div class="row text-right" dir="rtl">
+            <div class="col-lg-4 col-md-5 col-sm-12">
+                <div class="jumbotron p-2 mb-2">
+                    <button class="btn btn-primary py-0 btn-block">احجز الأن </button>
+                </div>
+                <div class="jumbotron py-1 mt-1 mb-3">
+                    <p class="text-center text-dark font-weight-bold pt-2">نحن نضاهي الأسعار</p>
+                </div>
+                <div class="jumbotron text-right py-3 search mt-1">
+                    <h3>بحث</h3>
+                    <form action="#" class="text-right">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">الوجهة / اسم مكان الإقامة : </label>
+                            <input type="text" class="form-control"  placeholder="مكان الإقامة">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"> تاريخ الوصول </label>
+                            <input type="date" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"> تاريخ المغادرة </label>
+                            <input type="date" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="ekama">إقامة لمدة 1 ليلة</label>
+                            <select class="form-control" id="ekama">
+                              <option> شخص بالغ واحد </option>
+                              <option>شخصان بالغان</option>
+                              <option> 3 أشخاص بالغين</option>
+                              <option> 4 أشخاص بالغين</option>
+                              <option> 5 أشخاص بالغين</option>
+                            </select>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col">
+                                <select class="form-control" id="ekama">
+                                    <option> بدون أطفال </option>
+                                    <option> طفل واحد </option>
+                                    <option>طفلان</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select class="form-control" id="ekama">
+                                    <option> غرفة واحدة</option>
+                                    <option> غرفتان </option>
+                                    <option> 3 غرف</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block">بحث</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-12">
+                <nav class="nav navAnnounce">
+                    <a class="nav-link active" href="#prices"> المعلومات والأسعار </a>
+                    <a class="nav-link border-right" href="#">المرافق</a>
+                    <a class="nav-link border-right" href="#">معلومات تهمك</a>
+                    <a class="nav-link border-right" href="#">شروط مفصلة</a>
+                    <a class="nav-link border-right" href="#">تقييمات الضيوف </a>
+                </nav>
+                <div class="row pb-3 pt-3">
+                    <div class="col-2"><h5 class="badge badge-info py-2 mt-2"> فندق </h5></div>
+                    <div class="col-lg-6 col-md-6 col-10">
+                        <h5 class="pt-2"> اويو 130 فندق نايت إن </h5>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <button class="btn btn-success mt-2 btn-block float-left">احجز الآن</button>
+                    </div>
+                </div>
+                <div class="cont pb-3">
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 6</div>
+                      <img src="images/1.jpg" style="width:100%" class="img-fluid">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 6</div>
+                      <img src="images/2.jpg" style="width:100%" class="img-fluid">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 6</div>
+                      <img src="images/3.jpg" style="width:100%" class="img-fluid">
+                    </div>
+                      
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 6</div>
+                      <img src="images/4.jpg" style="width:100%" class="img-fluid">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">5 / 6</div>
+                      <img src="images/5.jpg" style="width:100%" class="img-fluid">
+                    </div>
+                      
+                    <div class="mySlides">
+                      <div class="numbertext">6 / 6</div>
+                      <img src="images/3.jpg" style="width:100%" class="img-fluid">
+                    </div>
+                      
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                  
+                    <div class="caption-container">
+                      <p id="caption"></p>
+                    </div>
+                  
+                    <div class="rows">
+                      <div class="column">
+                        <img class="demo cursor img-fluid" src="images/1.jpg" onclick="currentSlide(1)">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor img-fluid" src="images/2.jpg" onclick="currentSlide(2)">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor img-fluid" src="images/3.jpg" onclick="currentSlide(3)">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor img-fluid" src="images/4.jpg" onclick="currentSlide(4)">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor img-fluid" src="images/5.jpg" onclick="currentSlide(5)">
+                      </div>    
+                      <div class="column">
+                        <img class="demo cursor img-fluid" src="images/3.jpg" onclick="currentSlide(6)">
+                      </div>
+                    </div>
+                </div>
+                <h4 class="py-3 txtYellow" id="prices"><i class="fa fa-star"></i> أحد أكثر أماكن الإقامة مبيعاً لدينا في الخبر! </h4>
+                <p>يقع فندق OYO 130 Night Inn في مدينة الخبر، ويوفر أماكن إقامة مع مسبح في الهواء الطلق وصالة مشتركة وبار. ويتميز مكان الإقامة بحوض استحمام ساخن،</p>
+                <p>تأتي كل وحدة مع أريكة وتلفزيون بشاشة مسطحة مع قنوات فضائية ومطبخ مجهز جيدا وحمام خاص مع حوض استحمام وبيديت. وتضم بعض الوحدات منطقة لتناول الطعام و/أو شرفة،</p>
+                <h4 class="font-weight-bold">اويو 130 فندق نايت إن يستقبل ضيوف Booking.com منذ 26-أغسطس-2017.</h4>
+                <div class="row pt-2">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <p><i class="fa fa-wifi"></i>  واي فاي مجاني</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <p><i class="fa fa-parking"></i> مواقف سيارات مجانية </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <p><i class="fa fa-users"></i> غرف عائلية </p>
+                    </div>
+                </div>
+                <h3 class="font-weight-bold text-dark">التوافر</h3>
+                <div class="jumbotron bgYellow mt-3 p-3">
+                  <h4>متى ترغب بالإقامة في اويو 130 فندق نايت إن؟</h4>  
+                  <form>
+                    <div class="row py-3">
+                        <div class="col-lg-4 col-md-4 col-sm-12 pt-2">
+                            <label class="font-weight-bold" for="startD">تاريخ الوصول</label>
+                            <input type="date" id="startD" class="form-control">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 pt-2">
+                            <label class="font-weight-bold" for="endD">تاريخ المغادرة</label>
+                            <input type="date" id="endD" class="form-control">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 pt-2">
+                            <button class="btn btn-success mtBtn">تحقق من التوافر</button>
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col">
+                            <label>غرف</label>
+                            <select>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label>بالغون</label>
+                            <select>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label>أطفال</label>
+                            <select>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="jumbotron jumbContact">
+        <div class="container text-center" dir="rtl">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h3>وفر وقتك ومالك! </h3>
+                    <p>اشترك وسنرسل أفضل العروض إليك</p>
+                    <form class="pt-4">
+                        <div class="input-group newsletter pb-5">
+                            <input type="email" class="form-control inptEmail" required
+                                placeholder="عنوان البريد الخاص بك">
+                            <span class="input-group-btn pr-3"><button class="btn text-white btn-primary" type="submit">
+                                    اشترك </button></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="foot">
+      
+        <div class="container text-right pb-5">
+            <a href="#"> مصر </a>
+            <div class="row" dir="rtl">
+                <div class="col-6 col-lg-2 text-right"><br>
+                  <a href="#">القاهرة (56,119) </a><br>
+                  <a href="#">السويس (3,074)</a><br>
+                  <a href="#"> الإسماعيلية (1,419) </a><br>
+                  <a href="#"> المنوفية (795)</a> <br>
+                  <a href="#">الفيوم (354)</a><br>
+                  <a href="#">كل الإعلانات...</a>
+                </div>
+              
+              <div class="col-6 col-lg-2 text-right"><br>
+                <a href="#"> الجيزة (25,778) </a><br>
+                <a href="#">  القليوبية (2,464) </a><br>
+                <a href="#"> دمياط (1,334) </a><br>
+                <a href="#"> البحيرة (495) </a>
+                <a href="#">أسوان (322)</a>
+              </div>
+              <div class="col-12 col-lg-1"></div>
+              <div class="col-6 col-lg-2 text-right"><br>
+                <a href="#"> الإسكندرية (17,934) </a><br>
+                <a href="#"> الغربية (2,179) </a><br>
+                <a href="#"> بورسعيد (1,173)</a><br>
+                <a href="#"> المنيا (423) </a><br>
+                <a href="#">كفر الشيخ (302)</a>
+              </div>
+              <div class="col-lg-1 col-1"></div>
+              <div class="col-5 col-lg-2 text-right"><br>
+                <a href="#">مطروح (8,274)</a><br>
+                <a href="#">الشرقية (2,093)</a><br>
+                <a href="#">أسيوط (1,066)  </a><br>
+                <a href="#"> بني سويف (423) </a>
+                <a href="#">قنا (274)</a>
+              </div>
+              <div class="col-6 col-lg-2"><br>
+                <div class="text-right">
+                  <a href="#">الدقهلية (3,276)</a>
+                  <a href="#">البحر الأحمر (1,893)</a>
+                  <a href="#">جنوب سيناء (1,024)</a>
+                  <a href="#">سوهاج (364)</a>
+                  <a href="#"> الأقصر (151) </a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/file.js"></script>
+</body>
+
+</html>
