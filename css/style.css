@@ -254,4 +254,7 @@ body {
   }
 }
 
-
+.formAnnouncement{
+  background-color: rgb(213, 203, 250);
+  padding: 3rem 1rem;
+}
