@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.webp">
+    <link rel="stylesheet" href="css/style.css">
+    <title>أدخل الإعلان</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header p-3">
+        <div class="container">
+            <div class="row" dir="rtl">
+                <div class="col-lg-3 col-md-4">
+                    <a href="index.html"><img src="images/logg.png" class="img-fluid imgLogo"></a>   
+                </div>
+                <div class="col-lg-9 col-md-8" dir="rtl">
+                    <a href="#" class="btn btn-outline-primary text-white py-1 font-weight-bold">اعرض عقارك علي موقعنا</a>
+                    <a href="registration.html" class="btn btn-light font-weight-bold py-1">إنشاء حساب</a>
+                    <a href="login.html" class="btn btn-light font-weight-bold py-1">تسجيل الدخول</a>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg pr-0 pt-3" dir="rtl">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-align-justify text-white"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-right pr-0" dir="rtl">
+                        <li class="nav-item active pl-3">
+                            <a class="nav-link" href="#"><i class="fa fa-home"></i> الإقامات <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a class="nav-link" href="#"><i class="fa fa-plane"></i> رحلات الطيران</a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a class="nav-link" href="#"><i class="fa fa-car"></i> تأجير السيارات </a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a class="nav-link" href="#"><i class="fa fa-asterisk"></i> المعالم السياحية </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-taxi"></i> سيارات أجرة المطار </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of Header -->
+    <div class="container pt-4">
+        <h1 class="text-right text-dark">  اضف عقارك هنا <i class="fa fa-angle-left"></i></h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-right">
+                <form action="#" class="formAnnouncement mt-4" dir="rtl">
+                    <div class="form-group text-right">
+                        <label>مقدمة الإعلان</label>
+                        <input type="text" class="form-control"  placeholder="مقدمة الإعلان">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>اختر الحي</label>
+                            <select class="form-control">
+                                <option selected>أختر الحي</option>
+                                <option>القاهرة</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label>اختر المنطقة</label>
+                            <select  class="form-control">
+                                <option selected>أختر المنطقة</option>
+                                <option>القاهرة</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col">
+                            <label> اسم الشارع </label>
+                            <input type="text" class="form-control"  placeholder=" اسم الشارع ">
+                        </div>
+                        <div class="col">
+                            <label> التفاصيل </label>
+                            <input type="text" class="form-control"  placeholder=" التفاصيل ">
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col">
+                            <label> نوع العقار </label>
+                            <select  class="form-control">
+                                <option selected> نوع العقار </option>
+                                <option> إيجار </option>
+                                <option> تمليك </option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label> الغرض </label>
+                            <select  class="form-control">
+                                <option selected> الغرض  </option>
+                                <option> إيجار </option>
+                                <option> تمليك </option>
+                            </select>
+                        </div>
+                    </div>
+                    <label> المساحة </label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="المساحة" aria-label="Username" aria-describedby="basic-addon1">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">
+                            <select>
+                                <option selected> متر  </option>
+                                <option> فدان </option>
+                                <option> قيراط </option>
+                            </select>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col">
+                            <div class="form-group text-right">
+                                <label> السعر </label>
+                                <input type="number" class="form-control"  placeholder="مقدمة الإعلان">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label> الغرض </label>
+                            <select  class="form-control">
+                                <option selected> الغرض  </option>
+                                <option> إيجار </option>
+                                <option> تمليك </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col">
+                            <label> العملة  </label>
+                            <select  class="form-control">
+                                <option selected> جنيه  </option>
+                                <option> دولار </option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label> عرض السعر </label>
+                            <select  class="form-control">
+                                <option selected> الكلي  </option>
+                                <option> لكل متر </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col">
+                            <label> عدد الحمامات  </label>
+                            <select  class="form-control">
+                                <option selected> 1  </option>
+                                <option> 2 </option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label> عدد الغرف </label>
+                            <select  class="form-control">
+                                <option selected> 4  </option>
+                                <option> 5 </option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label> التشطيب  </label>
+                            <select  class="form-control">
+                                <option selected>اختر</option>
+                                <option> طوب أحمر  </option>
+                                <option> نصف تشطيب </option>
+                            </select>
+                        </div>
+                    </div>
+                    <label>أضف صورة</label>
+                    <div class="custom-file">
+                        <label class="custom-file-label" for="customFile">من فضلك قم بتحميل صورة</label>
+                        <input type="file" class="custom-file-input" id="customFile">
+                      </div>
+                    <button class="btn btn-primary btn-block mt-5"> اضف عقارك الان <i class="fa fa-edit pr-3"></i> </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/file.js"></script>
+</body>
+
+</html>
